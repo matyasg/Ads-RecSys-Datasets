@@ -37,7 +37,7 @@ class iPinYou(Dataset):
         collect meta information, and produce hdf files if not exists
         :param initialized: write feature and hdf files if True
         """
-        self.initialized = initialized
+        self.initialized = False
         if not self.initialized:
             print('Got raw iPinYou data, initializing...')
             if self.max_length is None or self.num_features is None:
